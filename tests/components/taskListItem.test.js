@@ -1,5 +1,6 @@
 const TaskListItem = require('../../lib/components/taskListItem');
 
+
 describe('TaskListItem class', () => {
   test('render() returns correct HTML', () => {
     const taskListItem = new TaskListItem(['Task 1']);

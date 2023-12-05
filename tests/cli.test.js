@@ -16,8 +16,9 @@ describe('CLI class', () => {
     await cli.run();
 
     // Check if the HTML file is generated with the correct content
-    const generatedHTML = await writeFile.mock.calls[0][1];
-    const expectedHTML = createDocument("John's Tasks", [{ text: 'Task 1', priority: false }]);
+    const generatedHTMLPath = writeFile.mock.calls[0][0];
+const generatedHTML = await fs.promises.readFile(generatedHTMLPath, 'utf-8');
+
     expect(generatedHTML).toBe(expectedHTML);
 
     // Check if the console.log message is displayed

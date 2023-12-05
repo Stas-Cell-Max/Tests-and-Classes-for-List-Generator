@@ -1,4 +1,4 @@
-const Header = require('../lib/components/header');
+const Header = require('../../lib/components/header');
 
 describe('Header class', () => {
   test('render() returns correct HTML', () => {

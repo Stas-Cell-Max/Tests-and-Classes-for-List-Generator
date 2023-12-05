@@ -1,4 +1,4 @@
-const TaskList = require('../lib/components/taskList');
+const TaskList = require('../../lib/components/taskList');
 
 describe('TaskList class', () => {
   test('render() returns correct HTML', () => {
